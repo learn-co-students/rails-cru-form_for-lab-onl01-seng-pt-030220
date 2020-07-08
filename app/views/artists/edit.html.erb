@@ -1,10 +1,6 @@
 <h1>Edit Artist: <%= @artist.name %></h1>
 
-<%= form_for @artist do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
-  <%= f.label :bio %>
-  <%= f.text_field :bio %><br>
-  <%= f.submit %>
+<%= render "form" %>
 
-<% end %>
+<%= link_to "Cancel", @artist %>
+<%= link_to "All artists", artists_path %>
