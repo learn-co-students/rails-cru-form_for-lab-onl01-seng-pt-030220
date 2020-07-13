@@ -1,0 +1,10 @@
+<% @songs.each do |song| %>
+    <label for='name'>Name:</label>
+    <p><%= song.name %></p>
+
+    <label for='artist id'>Artist Id:</label><br>
+    <%= song.artist_id %><br>
+
+    <label for='genre id'>Genre Id:</label><br>
+    <%= song.genre_id %><br>
+<% end %>
