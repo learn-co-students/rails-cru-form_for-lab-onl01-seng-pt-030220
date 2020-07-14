@@ -1,7 +1,7 @@
-<%= form_tag @genre do%>
-    <label> Name: </label>
-    <%= text_field_tag :name %> <br>
+<%= form_for @genre do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br>
     
-    <%= submit_tag "Submit Genre" %>
+    <%= f.submit %>
 <% end %>
 
