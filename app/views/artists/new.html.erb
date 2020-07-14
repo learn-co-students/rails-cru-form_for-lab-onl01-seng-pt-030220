@@ -1,0 +1,9 @@
+<%= form_tag @artist do%>
+    <label> Name: </label>
+    <%= text_field_tag :name %> <br>
+    <label> Bio: </label>
+    <%= text_field_tag :bio %> <br>
+    <%= submit_tag "Submit Artist" %>
+<% end %>
+
+<%= params.inspect %>
