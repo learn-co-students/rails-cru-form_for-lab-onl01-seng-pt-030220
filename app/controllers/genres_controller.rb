@@ -4,7 +4,7 @@ class GenresController < ApplicationController
     @genre = Genre.new
   end
   def create
-    @genre = Genre.create(genre_params(:name, :bio))
+    @genre = Genre.create(genre_params(:name))
     redirect_to genre_path(@genre)
   end
   def show
