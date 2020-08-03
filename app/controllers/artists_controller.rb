@@ -1,17 +1,6 @@
 class ArtistsController < ApplicationController
 
-    def edit
-
+    def index
+        @artists = Artist.all
     end
-
-    def new
-
-    end
-
-    def show
-
-
-    end
-
-    
 end
