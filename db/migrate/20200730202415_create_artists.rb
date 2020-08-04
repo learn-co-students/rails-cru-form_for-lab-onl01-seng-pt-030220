@@ -4,7 +4,7 @@ class CreateArtists < ActiveRecord::Migration[5.0]
       t.string :name
       t.text :bio
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
